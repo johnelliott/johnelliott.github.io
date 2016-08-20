@@ -5,7 +5,7 @@
   "main": "build.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "budo --live",
+    "watch": "budo --live --open",
     "sass-watch": "node_modules/node-sass/bin/node-sass --watch style.scss style.css",
     "sasquatch": "npm run sass-watch",
     "build": "node build.js && npm run build-css",
