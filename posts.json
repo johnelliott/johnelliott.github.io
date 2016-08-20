@@ -1,4 +1,4 @@
 [
-  {"title": "first post", "markdown": "post.md"},
-  {"title": "second post", "markdown": "post2.md"}
+  {"title": "About", "markdown": "about.md"},
+  {"title": "Work", "markdown": "work.md"}
 ]
