@@ -5,14 +5,22 @@
   "main": "build.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node build.js"
+    "watch": "budo --live",
+    "sass-watch": "node_modules/node-sass/bin/node-sass --watch style.scss style.css",
+    "sasquatch": "npm run sass-watch",
+    "build": "node build.js && npm run build-css",
+    "build-production": "npm run build && npm run minify-css",
+    "build-css": "node_modules/node-sass/bin/node-sass style.scss style.css",
+    "minify-css": "node_modules/clean-css/bin/cleancss style.css -o style.css --skip-restructuring"
   },
   "keywords": [
     "blog"
   ],
-  "author": "John Elliott",
+  "author": "John Elliott <johnelliott703@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "marked": "^0.3.5"
+  "devDependencies": {
+    "clean-css": "^3.4.19",
+    "marked": "^0.3.5",
+    "node-sass": "^3.8.0"
   }
 }

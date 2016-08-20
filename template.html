@@ -2,14 +2,26 @@
 <html>
   <head>
     <meta charset="utf-8"/>
-    <title>John's Blog</title>
-    <link rel="stylesheet" href="https://edwardtufte.github.io/tufte-css/tufte.css"/>
-    <!-- <link rel="stylesheet" href="latex.css"/> -->
+    <title>John Elliott</title>
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#c6f5ff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#c6f5ff">
   </head>
   <body>
-    <h1>Blog</h1>
-    <p class="subtitle">John Elliott · <a href="https://github.com/johnelliott">github</a> · <a href="https://twitter.com/johnelliottDC">@johnelliottdc</a></p>
-    {content}
+    <div class="navigation">
+      <nav>
+        <h1 class="navigation__title"><a href="/">John Elliott</a></h1>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="https://twitter.com/johnelliottdc">Twitter</a></li>
+          <li><a href="https://github.com/johnelliott">Github</a></li>
+          <li><a href="http://primitivemachine.com">Photography</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="content">
+      {content}
+    </div>
   </body>
 </html>
