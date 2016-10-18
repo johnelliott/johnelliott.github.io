@@ -23,7 +23,7 @@ body {
   }
 }
 
-nav, h1, h2, h3 {
+nav, h1, h2, h3, h4, h5, h6, table {
   // TODO fix size in body
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -48,8 +48,33 @@ h1,h2,h3 {
   line-height: 1.2em;
   letter-spacing: -0.025em;
 }
-div.content h1,h2,h3 {
-  font-size: 1.5em;
+table {
+  font-size: 0.9em;
+  td{
+    min-width: 10em;
+    &:first-of-type {
+      padding-right: 2em;
+    }
+  }
+}
+div.content {
+  h1 {
+    font-size: 1.6em;
+  }
+  h2 {
+    font-size: 1.1em;
+  }
+  h3 {
+    font-size: 0.7em;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+  ul {
+    list-style-type: square;
+    &:before {
+      color: red;
+    }
+  }
 }
 @media print{
   body {

@@ -27,3 +27,10 @@ function renderPost (post, callback) {
     callback(html)
   })
 }
+
+// render a special resume page
+const resume =  fs.readFileSync(`${__dirname}/resume.md`, 'utf8')
+md(resume, (err, html) => {
+  if (err) reject(err)
+  fs.writeFileSync(`${__dirname}/resume.html`, template.replace('{content}', html))
+})

@@ -5,7 +5,7 @@
   "main": "build.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "budo --live --open",
+    "watch": "node_modules/budo/bin/cmd.js --live --open",
     "sass-watch": "node_modules/node-sass/bin/node-sass --watch style.scss style.css",
     "sasquatch": "npm run sass-watch",
     "build": "node build.js && npm run build-css",
@@ -22,5 +22,8 @@
     "clean-css": "^3.4.19",
     "marked": "^0.3.5",
     "node-sass": "^3.8.0"
+  },
+  "dependencies": {
+    "budo": "^9.2.1"
   }
 }
