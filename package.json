@@ -5,13 +5,11 @@
   "main": "build.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "node_modules/budo/bin/cmd.js --live --open",
-    "sass-watch": "node_modules/node-sass/bin/node-sass --watch style.scss style.css",
-    "sasquatch": "npm run sass-watch",
-    "build": "node build.js && npm run build-css",
-    "build-production": "npm run build && npm run minify-css",
-    "build-css": "node_modules/node-sass/bin/node-sass style.scss style.css",
-    "minify-css": "node_modules/clean-css/bin/cleancss style.css -o style.css --skip-restructuring"
+    "sass": "NODE_ENV=development node_modules/.bin/node-sass --source-map . style.scss style.css",
+    "sass-watch": "npm run sass && NODE_ENV=development node_modules/.bin/node-sass --watch --source-map . style.scss style.css",
+    "dev": "npm run build-dev && node_modules/.bin/budo --live --open",
+    "build-dev": "npm run sass && NODE_ENV=development node build.js",
+    "build": "node build.js"
   },
   "keywords": [
     "blog"
