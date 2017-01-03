@@ -1,5 +1,17 @@
 $theme-color: #c6f5ff;
 $active-link-color: #472F9C;
+$font-stack:
+-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+Helvetica,
+Arial,
+sans-serif,
+"Apple Color Emoji",  /* Emojis*/
+"Segoe UI Emoji", /* Emojis*/
+"Segoe UI Symbol"; /* Emojis*/
+
 html {
   min-height: 100%; //fill linear gradient
 }
@@ -9,7 +21,7 @@ body {
   margin: auto;
   max-width: 36em;
   padding: 0 1em;
-  font: 1.1em/1.62em Georgia, serif;
+  font: 1em/1.6em $font-stack;
   a {
     color: inherit;
     text-decoration: none;
@@ -21,11 +33,6 @@ body {
       text-decoration: none;
     }
   }
-}
-
-nav, h1, h2, h3, h4, h5, h6, table {
-  // TODO fix size in body
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 nav {
   display: flex;
@@ -45,8 +52,8 @@ nav {
   }
 }
 h1,h2,h3 {
+  margin-top: 1em;
   line-height: 1.2em;
-  letter-spacing: -0.025em;
 }
 table {
   font-size: 0.9em;
