@@ -1,4 +1,4 @@
-$theme-color: #c6f5ff;
+$theme-color: #daf2ff;
 $active-link-color: #472F9C;
 $font-stack:
 -apple-system,
@@ -22,6 +22,9 @@ body {
   max-width: 36em;
   padding: 0 1em;
   font: 1em/1.6em $font-stack;
+  p {
+    margin: 0.8em auto;
+  }
   a {
     color: inherit;
     text-decoration: none;
@@ -77,9 +80,10 @@ div.content {
     text-transform: uppercase;
   }
   ul {
-    list-style-type: square;
-    &:before {
-      color: red;
+    list-style-type: none;
+    padding-left: 0.25em;
+    li { 
+      margin: 0.25em;
     }
   }
 }

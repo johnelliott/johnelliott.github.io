@@ -1,3 +1,3 @@
-You can hire me for specific projects or onto your team for full-time salaried work.
+Hire me for contract or full-time salaried work.
 
-You can contact me: <john@primitivemachine.com>
+<john@primitivemachine.com>
